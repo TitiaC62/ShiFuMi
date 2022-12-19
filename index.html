@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>SHI FU MI </title>
+</head>
+<body>
+   <header>
+       <h1>Bienvenue au jeu du Shi Fu Mi</h1>
+   </header>
+
+   <main>
+        <div class="buttons">
+            <button id="Pierre" class="button"> 
+                <img src="/images/pierre.png" alt="pierre">
+        </button>
+        <button id="Feuille" class="button"> 
+                <img src="/images/feuille.png" alt="feuille">
+        </button>
+        <button id="Ciseaux" class="button"> 
+                <img src="/images/ciseaux.png" alt="ciseaux">
+        </button>
+        </div>
+         
+
+        <div class="affichage">
+            <h2 id="affichage"></h2>
+        </div>
+
+        <div class="compteur">
+            <h2> Joueur : <p id="comptJoueur"> 0</p></h2>
+            <h2> Ordinateur : <p id="comptOrdi"> 0</p></h2> 
+        </div>
+
+        <div class="reset">
+            <button id="reset"> Recommencer</button>
+        </div>
+    </main>
+<script src="app.js"></script>
+
+</body>
+</html>
