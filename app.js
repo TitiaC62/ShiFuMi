@@ -73,6 +73,21 @@ resetCompt.addEventListener('click', function(){
 })
     
 
+const container = document.getElementById('text')
 
+const text = 'Bienvenue au jeu du Shi Fou Mi'
+const limit = text.length
+const interval = 100
+let index = 0
+
+
+const idInterval = setInterval(function(){
+    console.log(index)
+    if(index <= limit){
+        container.innerText = text.slice(0, index++)
+    } else {
+        clearInterval(idInterval)
+    }
+}, interval)
 
 
